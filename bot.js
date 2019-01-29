@@ -87,6 +87,8 @@ client.on('message', message => {
 client.on('message', async (message) => {
 
     if (message.content.startsWith(prefix + 'discord')) {
+              if(!message.member.roles.find('name', "T | Seller")) return message.reply(`**I can't complete this command because you don't have T | Seller Rank!**`);
+
       await message.channel.send("**وش الشي يللي بتبيعه؟**").then(e => {
       let filter = m => m.author.id === message.author.id
       let lan = '';
@@ -140,6 +142,8 @@ client.on('message', async (message) => {
 client.on('message', async (message) => {
 
     if (message.content.startsWith(prefix + 'tags')) {
+              if(!message.member.roles.find('name', "T | Seller")) return message.reply(`**I can't complete this command because you don't have T | Seller Rank!**`);
+
       await message.channel.send("**وش الشي يللي بتبيعه؟**").then(e => {
       let filter = m => m.author.id === message.author.id
       let lan = '';
@@ -194,6 +198,8 @@ client.on('message', async (message) => {
 client.on('message', async (message) => {
 
     if (message.content.startsWith(prefix + 'accounts')) {
+              if(!message.member.roles.find('name', "T | Seller")) return message.reply(`**I can't complete this command because you don't have T | Seller Rank!**`);
+
       await message.channel.send("**وش الشي يللي بتبيعه؟**").then(e => {
       let filter = m => m.author.id === message.author.id
       let lan = '';
@@ -247,6 +253,8 @@ client.on('message', async (message) => {
 client.on('message', async (message) => {
 
     if (message.content.startsWith(prefix + 'design')) {
+              if(!message.member.roles.find('name', "T | Seller")) return message.reply(`**I can't complete this command because you don't have T | Seller Rank!**`);
+
       await message.channel.send("**وش الشي يللي بتبيعه؟**").then(e => {
       let filter = m => m.author.id === message.author.id
       let lan = '';
