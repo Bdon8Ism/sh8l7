@@ -9,7 +9,7 @@ const prefix = "-";
 
 client.on('ready' , () => {
   console.log('Tackota');
-client.user.setGame(`تم تطويره من قبل IiKaRèèèèèèèM#0001`);
+client.user.setGame(`Developed By IiKaRèèèèèèèM#0001`);
 client.user.setStatus(`dnd`);
 });
 
